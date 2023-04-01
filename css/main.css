@@ -245,7 +245,7 @@ header div ul li a:hover {
 }
 
 .nazvanie-cinema {
-    left: 26rem;
+    margin-left: 23rem;
     position: absolute;
     color: #000;
     margin-top: -17rem;
@@ -258,8 +258,8 @@ header div ul li a:hover {
     width: 14.5rem;
     height: 4rem;
     position: absolute;
-    left: 26rem;
-    top: 9rem;
+    margin-left: 23rem;
+    margin-top: -14rem;
 }
 
 .prof-name {
@@ -273,4 +273,7 @@ header div ul li a:hover {
 
 .comments {
     margin-top: 8rem;
+}
+.genres{
+    margin-left: 23rem;
 }
