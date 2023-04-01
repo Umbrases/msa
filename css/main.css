@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;  /* Маркеры */
+    text-decoration: none;  /* Подчеркивание */
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: #ff0000;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2); /* Увеличивает  */
+}
+
+header nav ul li {
+    position: relative;
+    float: left;  /* Размешает текст с левого края */
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+header div ul li {
+    position: relative;
+    float: left;  /* Размешает текст с левого края */
+}
+
+header div ul li a {
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+}
+
+header div ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.auto {
+    width: 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px 32px;
+    background-color: rgba(24, 26, 33, 0.75);
+    border-radius: 4px;
+    margin: 32.5%;
+    box-shadow: 0 10px 15px rgba(0,0,0, .4);
+    margin-top: 10%;
+    z-index: 50;
+}
+
+.admin_div {
+    width: 65%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px 32px;
+    background-color: rgba(24, 26, 33, 0.75);
+    border-radius: 4px;
+    margin: 17.5%;
+    box-shadow: 0 10px 15px rgba(0,0,0, .4);
+    margin-top: 10%;
+    z-index: 50;
+}
+
+.auto_input {
+    margin: 14px;
+    padding: 14px;
+    width: 95%;
+    border: #000000;
+    border-radius: 4px;
+}
+
+.auto_div {
+    color: #fff;
+    margin-left: 14px;
+}
+
+.auto_nazv {
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.prof ul{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+.prof ul li {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.prof:hover > ul {
+    display: initial;
+}
+
+#btn_clic {
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+}
+#btn_clic:hover{
+    background: #000;
+    color: #fff;
+}
+.modal {
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.auto_submit {
+    padding: 14px;
+    margin: 14px;
+    width: 95%;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    border: #000000;
+    border-radius: 4px;
+    background-color: field;
+    text-align: center;
+    cursor: pointer;
+}
+.auto_submit a {
+    color: #000;
+}
+
+.catalog{
+    margin-top: 5%;
+    height: 100%;
+}
+
+.tovar {
+    background-color: #fff;
+    /*padding: 15px;*/
+    float: left;
+    margin-left: 4%;
+    margin-top: 2%;
+    border: #000000;
+    border-radius: 4px;
+    min-width: 16.5rem;
+    min-height: 18rem;
+    box-shadow: 0 5px 10px #000;
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 1.2%;
+
+}
+
+.table tr th {
+    border: 1px solid #000
+}
+
+.cinema {
+    background-color: #fff;
+    padding: 15px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 7%;
+    border: #000000;
+    border-radius: 4px;
+    min-width: 92%;
+    min-height: 100%;
+    box-shadow: 0 5px 10px #000;
+}
+
+.opisanie {
+    min-width: 92%;
+    font-size: 15px;
+    width: 14.5rem;
+    height: 4rem;
+}
+
+.nazvanie {
+    font-size: 28px;
+    /*margin-left: 3.4rem;*/
+    max-width: min-content;
+    color: #fff;
+    margin-top: -4rem;
+    min-width: inherit;
+    text-align: center;
+}
+
+.img {
+    border-radius: 3px;
+    width: 16.5rem;
+    height: 18rem;
+
+}
+
+.nazvanie-cinema {
+    left: 26rem;
+    position: absolute;
+    color: #000;
+    margin-top: -17rem;
+    font-size: 28px;
+}
+
+.opisanie-cinema {
+    min-width: 47%;
+    font-size: 15px;
+    width: 14.5rem;
+    height: 4rem;
+    position: absolute;
+    left: 26rem;
+    top: 9rem;
+}
+
+.prof-name {
+    padding: 4px;
+}
+
+.prof-input {
+    left: 10rem;
+    position: absolute;
+}
+
+.comments {
+    margin-top: 8rem;
+}
