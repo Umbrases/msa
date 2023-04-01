@@ -36,7 +36,7 @@ $genres = mysqli_fetch_all($genres);
         ?>
     </div>
 
-    <div class='comments">
+    <div class='comments'>
         <?php
         foreach ($comments as $comment) {
             ?>
